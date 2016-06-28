@@ -7,7 +7,7 @@ Scalable barotropic solver for CESM ocean component.
 
 1. Create a new case which can run normally as usual, refer to README.txt for details.
 
-2. Copy all of these 6 files(POP_SolversMod.F90, barotropic.F90, build-namelist, initial.F90, namelist_defaults_pop2.xml, namelist_definition_pop2.xml) into the path $YOUR_CASE_DIR/SourceMods/src.pop2/
+2. Copy all of these 6 files (POP_SolversMod.F90, barotropic.F90, build-namelist, initial.F90, namelist_defaults_pop2.xml, namelist_definition_pop2.xml) into the path $YOUR_CASE_DIR/SourceMods/src.pop2/
 
 3. ./YOUR_CASE.build
 
