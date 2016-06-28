@@ -5,7 +5,7 @@
 Scalable barotropic solver for CESM ocean component.
 
 
-1. Create a new case which can run normally as usual.
+1. Create a new case which can run normally as usual, refer to README.txt for details.
 
 2. Copy all of these 6 files into the path $YOUR_CASE_DIR/SourceMods/src.pop2/
 
