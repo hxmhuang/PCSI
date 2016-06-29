@@ -49,4 +49,5 @@
 ! 4. To preview the namelists, invoke $CASEROOT preview-namelists and look at 
 !    $CASEROOT/CaseDocs/pop2_in
 !----------------------------------------------------------------------------------
-
+preconditionerchoice = 'evp'
+solverchoice = 'PCSI'
