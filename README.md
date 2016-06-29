@@ -6,7 +6,7 @@ How to deploy the scalable barotropic solver for CESM ocean component in CESM.
 
 (1) Create a complete case:
 
-./create_newcase -case YOUR_CASE -res f09_g16 -compset B1850CN -mach yellowstone 
+./create_newcase -case YOUR_CASE G -res T62_t12 -compset -mach yellowstone 
 
 or an ocean component:
 
