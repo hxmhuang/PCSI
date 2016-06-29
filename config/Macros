@@ -1,0 +1,56 @@
+#
+# Makefile Macros generated from /glade/p/cesmdata/cseg/collections/cesm1_2_0/scripts/ccsm_utils/Machines/config_compilers.xml using
+# COMPILER=intel
+# OS=LINUX
+# MACH=yellowstone
+#
+CPPDEFS+= -DFORTRANUNDERSCORE -DNO_R16 -DHAVE_NANOTIME  -DLINUX -DCPRINTEL 
+
+CFLAGS:= -O2 -fp-model precise   -xHost 
+
+CXX_LDFLAGS:= -cxxlib 
+
+CXX_LINKER:=FORTRAN
+
+FC_AUTO_R8:= -r8 
+
+FFLAGS:= -O2 -fp-model source -convert big_endian -assume byterecl -ftz -traceback   -xHost 
+
+FFLAGS_NOOPT:= -O0 
+
+FIXEDFLAGS:= -fixed -132 
+
+FREEFLAGS:= -free 
+
+MPICC:=mpiicc
+
+MPICXX:=mpiicpc
+
+MPIFC:=mpiifort
+
+NETCDF_PATH:=$(NETCDF)
+
+PIO_CONFIG_OPTS:= --enable-filesystem-hints=gpfs 
+
+PNETCDF_PATH:=$(PNETCDF)
+
+SCC:= icc 
+
+SCXX:= icpc 
+
+SFC:= ifort 
+
+SUPPORTS_CXX:=TRUE
+
+TRILINOS_PATH:=$(TRILINOS_PATH)
+
+ifeq ($(DEBUG), TRUE) 
+   FFLAGS += -g -CU -check pointers -fpe0 
+endif
+
+ifeq ($(compile_threaded), true) 
+   LDFLAGS += -openmp 
+   CFLAGS += -openmp 
+   FFLAGS += -openmp 
+endif
+

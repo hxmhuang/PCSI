@@ -1,0 +1,45 @@
+create_newcase -mach yellowstone -compset G -res T62_t12 -case /glade/scratch/huyong/gT12_default_gmd_edit
+
+
+Component set: longname (shortname) (alias) 
+  2000_DATM%NYF_SLND_CICE_POP2_DROF%NYF_SGLC_SWAV (G_NORMAL_YEAR) (G) 
+Component set Description: 
+  DATM: SLND: DROF: CICE: POP2: SGLC: SWAV: present day: prognostic cice: POP2 default: COREv2 datm normal year forcing: COREv2 drof normal year forcing: 
+Grid: 
+  a%T62_l%T62_oi%tx0.1v2_r%rx1_m%tx0.1v2_g%null_w%null (T62_tx0.1v2) 
+  ATM_GRID = T62  NX_ATM=192 NY_ATM=96 
+  LND_GRID = T62  NX_LND=192 NX_LND=96 
+  ICE_GRID = tx0.1v2  NX_ICE=3600 NX_ICE=2400 
+  OCN_GRID = tx0.1v2  NX_OCN=3600 NX_OCN=2400 
+  ROF_GRID = rx1  NX_ROF=360 NX_ROF=180 
+  GLC_GRID = T62  NX_GLC=192 NX_GLC=96 
+  WAV_GRID = null  NX_WAV=0 NX_WAV=0 
+Grid Description: 
+  null is no grid: T62 is Gaussian grid: tx0.1v2 is tripole v2 1/10-deg grid: rx1 is 1 degree river routing grid: 
+Non-Default Options: 
+  ATM_NCPL: 24 
+  BUDGETS: TRUE 
+  CCSM_BGC: none 
+  CCSM_CCOST: -1 
+  CCSM_CO2_PPMV: 379.000 
+  CICE_MODE: prognostic 
+  COMP_ATM: datm 
+  COMP_GLC: sglc 
+  COMP_ICE: cice 
+  COMP_LND: slnd 
+  COMP_OCN: pop2 
+  COMP_ROF: drof 
+  COMP_WAV: swav 
+  CPL_ALBAV: true 
+  CPL_EPBAL: ocn 
+  DATM_MODE: CORE2_NYF 
+  DATM_PRESAERO: clim_2000 
+  DROF_MODE: DIATREN_ANN_RX1 
+  OCN_COUPLING: partial 
+  OCN_ICE_FORCING: active 
+  OCN_NCPL: 4 
+  OCN_TIGHT_COUPLING: FALSE 
+  OCN_TRACER_MODULES:  iage 
+  ROF_NCPL: $ATM_NCPL 
+  RTM_MODE: NULL 
+  SCIENCE_SUPPORT: NO 
