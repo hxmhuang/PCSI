@@ -26,5 +26,5 @@ or an ocean component:
 (6) Run you case with:
 ./YOUR_CASE.submit
 
-Note that the detailed configuration files are included in the config directory, which contains Readme.case, Macro, and user_nl_pop2. The CESM users can repeat our experiments following the Readme.case. Our compiler paramenters and dependant libraries have been indicated in Macro file. The user_nl_pop2 file is the namelist file provied by users.
+Note that the detailed configuration files are included in the config directory, which contains Readme.case, Macro, and user_nl_pop2. The CESM users can repeat our experiments following the Readme.case. Our compiler paramenters and dependent libraries have been indicated in Macro file. The user_nl_pop2 file is the namelist file provided by users.
  
