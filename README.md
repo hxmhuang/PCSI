@@ -10,7 +10,7 @@ How to deploy the scalable barotropic solver for ocean component in CESM.
 
 or an ocean component:
 
-./create_newcase -case YOUR_CASE -res ne30_g16_rx1 -compset G_NORMAL_YEAR -mach yellowstone 
+./create_newcase -case YOUR_CASE -res T62_t12 -compset G -mach yellowstone
  
 (2) Copy all of these 6 files (POP_SolversMod.F90, barotropic.F90, build-namelist, initial.F90, namelist_defaults_pop2.xml, namelist_definition_pop2.xml) into the path $YOUR_CASE_DIR/SourceMods/src.pop2/
 
